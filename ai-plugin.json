@@ -1,0 +1,22 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Materials Project 矿物数据插件",
+  "name_for_model": "materials_project_plugin",
+  "description_for_human": "查询矿物晶体结构、热力学等物性参数，适配矿物加工场景",
+  "description_for_model": "你是 Materials Project API 的插件调用助手，当用户询问矿物物性时，调用本插件。输入矿物物料 ID（如石英为 mp-10629），返回后整理结果",
+  "auth": {
+    "type": "apiKey",
+    "api_key": {ihfXdOthnXm1yzrgJ1BSWyCTB0q8nrJE}
+      "name": "X-API-KEY",
+      "in": "header"
+    }
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://你的公网地址/openapi_materials.yaml", // 后续部署新的 openapi.yaml 地址
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://picsum.photos/200/200",
+  "contact_email": "your-email@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
